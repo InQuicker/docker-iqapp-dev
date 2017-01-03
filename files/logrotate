@@ -1,0 +1,8 @@
+/iqapp/log/*.log {
+  daily
+  rotate 0
+  size 100M
+  missingok
+  notifempty
+  create 644 1000 root
+}
