@@ -25,4 +25,4 @@ WORKDIR $APP
 ENV BUNDLE_GEMFILE=${APP}/Gemfile \
   BUNDLE_JOBS=8
 
-RUN gem install bundler
+RUN gem install bundler -v 1.15.1
