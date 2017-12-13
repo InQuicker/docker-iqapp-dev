@@ -12,6 +12,7 @@ RUN apt-get update && \
 RUN npm install --global bower && \
    echo '{ "allow_root": true }' > /root/.bowerrc
 RUN npm install --global aglio
+RUN npm install --global yarn
 
 COPY files/logrotate /etc/logrotate.d/rails
 
