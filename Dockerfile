@@ -9,9 +9,9 @@ RUN apt-get update && \
     vim-tiny \
     faketime
 
-RUN npm install -g bower && \
+RUN npm install --global bower && \
    echo '{ "allow_root": true }' > /root/.bowerrc
-RUN npm install -g aglio
+RUN npm install --global aglio
 
 COPY files/logrotate /etc/logrotate.d/rails
 
