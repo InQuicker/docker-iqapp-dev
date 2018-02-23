@@ -4,10 +4,11 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y \
     build-essential \
+    faketime \
     git \
     less \
     vim-tiny \
-    faketime
+    supervisor
 
 RUN npm install --global bower && \
    echo '{ "allow_root": true }' > /root/.bowerrc
