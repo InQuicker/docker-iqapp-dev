@@ -1,4 +1,4 @@
-FROM inquicker/iqapp-base:2.3.3
+FROM inquicker/iqapp-base:2.5.1
 
 RUN apt-get update && \
   apt-get upgrade -y && \
