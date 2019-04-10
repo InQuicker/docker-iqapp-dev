@@ -1,4 +1,6 @@
-FROM inquicker/iqapp-base:2.5.1
+FROM inquicker/iqapp-base:2.3.3
+
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 
 RUN apt-get update && \
   apt-get upgrade -y && \
